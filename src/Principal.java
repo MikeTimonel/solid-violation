@@ -1,37 +1,18 @@
 public class Principal {
 
   public static void main(String[] args) {
-    Envio[] envios = {
-        new Envio("Municipal",5000),
-        new Envio("Intermunicipal",15000),
-        new Envio("Internacional",25000)
+    Tiempo[] envios = {
+        new Municipal(),
+        /*new intermunicipal(),
+        new internacional()*/
     };
-    imprimirTiempoDeEnvio(envios);
+    Impresion.imprimirTiempoDeEnvio(envios);
   }
-
-  public static void imprimirTiempoDeEnvio(Envio[] envios){
-    for (Envio coche : envios) {
-      System.out.println( "Tiempo de envio " + Tiempo.imprimirtiempo() + " horas.");
-
+  class Impresion{
+    public static void imprimirTiempoDeEnvio(Tiempo[] envios){
+    for (Tiempo envio : envios) {
+      System.out.println("Tiempo de envío: " + envio.obtenertiempo() + " horas. Y el precio es " + envio.obtenerPrecio());
     }
   }
-
-  abstract class Tiempo{
-    abstract int imprimirtiempo();
   }
-  class municipal extends Tiempo{
-    int imprimirtiempo(){
-      return 12;
-    };
-  }
-  class intermunicipal extends Tiempo{
-    int imprimirtiempo(){
-      return 36;
-    };
-  } 
-  class internacional extends Tiempo{
-    int imprimirtiempo(){
-      return 90;
-    };
-}
 }
