@@ -1,4 +1,4 @@
-public class Municipal extends Tiempo {
+public class Municipal extends Datos {
     private int precio;
     Municipal() {
         this.precio = 5000;

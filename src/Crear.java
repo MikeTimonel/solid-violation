@@ -1,5 +1,5 @@
 public class Crear{
-    public static void crearTipoEnvio(Tiempo[] envios) {
+    public static void crearTipoEnvio(Datos[] envios) {
     //Save Envio DB
   }
 }

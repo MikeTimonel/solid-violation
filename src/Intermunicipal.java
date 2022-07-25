@@ -1,4 +1,4 @@
-public class Intermunicipal extends Tiempo{
+public class Intermunicipal extends Datos{
     private int precio;
     Intermunicipal() {
         this.precio = 15000;

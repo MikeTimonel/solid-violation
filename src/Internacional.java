@@ -1,4 +1,4 @@
-public class Internacional extends Tiempo{
+public class Internacional extends Datos{
     private int precio;
     Internacional() {
         this.precio = 25000;

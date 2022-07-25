@@ -1,7 +1,7 @@
 public class Principal {
 
   public static void main(String[] args) {
-    Tiempo[] envios = {
+    Datos[] envios = {
         new Municipal(),
         new Intermunicipal(),
         new Internacional()
