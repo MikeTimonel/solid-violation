@@ -1,7 +1,7 @@
-public class Municipal extends Tiempo {
+public class Internacional extends Tiempo{
     private int precio;
-    Municipal() {
-        this.precio = 5000;
+    Internacional() {
+        this.precio = 25000;
     }
     @Override
     int obtenerPrecio(){
@@ -9,6 +9,6 @@ public class Municipal extends Tiempo {
     }
     @Override
     int obtenertiempo(){
-        return 12;
+        return 90;
     }
 }
